@@ -1,11 +1,9 @@
 #include "main.h"
-#include <stdio.h>
 
 /**
- * print_diagonal - draws a diagonal line
+ * print_diagonal - prints a diagonal line n times
  *
- * @n: number of times the character '\' should
- * be is printed
+ * @n: the number of times the character '\' should be printed
  *
  * Return: void
  */
@@ -13,16 +11,19 @@
 void print_diagonal(int n)
 {
 	int i;
-	int j;
+	int space;
 
 	if (n <= 0)
 		_putchar('\n');
+
 	else
 	{
 		for (i = 1; i <= n; i++)
 		{
-			for (j = 1; j <= i; j++)
+			for (space = 1; space <= i; space++)
+			{
 				_putchar(' ');
+			}
 			_putchar('\\');
 			_putchar('\n');
 		}
