@@ -3,9 +3,8 @@
 /**
  * print_diagonal - draws a diagonal line
  *
- * @n: number of times the character \  is printed
- *
- * Return: void
+ * @n: number of times the character \ should
+ * be is printed
  */
 
 void print_diagonal(int n)
@@ -13,17 +12,13 @@ void print_diagonal(int n)
 	int dgnl, space;
 
 	if (n <= 0)
-	{
 		_putchar('\n');
-	}
 	else
 	{
 		for (dgnl = 1; dgnl <= n; dgnl++)
 		{
 			for (space = 1; space <= dgnl; space++)
-			{
 				_putchar(' ');
-			}
 			_putchar('\\');
 			_putchar('\n');
 		}
