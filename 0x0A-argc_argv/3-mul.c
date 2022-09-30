@@ -12,14 +12,17 @@
 
 int main(int argc, char *argv[])
 {
-	if (argc < 2)
+	int mult;
+
+	if (argc != 3)
 	{
 		printf("Error\n");
 		return (1);
 	}
 	else
 	{
-		printf("%d\n", atoi(argv[1]) * atoi(argv[2]));
+		mult =  atoi(argv[1]) * atoi(argv[2]);
+		printf("%i\n", mult);
 	}
 	return (0);
 }
